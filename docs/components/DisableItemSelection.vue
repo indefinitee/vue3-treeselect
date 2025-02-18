@@ -1,5 +1,5 @@
 <template>
-  <treeselect :multiple="true" :options="options" :value="value" />
+  <treeselect :multiple="true" :options="options" :value="value" :flat="true" />
 </template>
 
 <script>

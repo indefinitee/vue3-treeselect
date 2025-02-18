@@ -235,7 +235,7 @@ export default {
      */
     clearAllText: {
       type: String,
-      default: "Clear all"
+      default: "Очистить всё"
     },
 
     /**
@@ -253,7 +253,7 @@ export default {
      */
     clearValueText: {
       type: String,
-      default: "Clear value"
+      default: "Очистить значение"
     },
 
     /**
@@ -379,7 +379,7 @@ export default {
      */
     loadingText: {
       type: String,
-      default: "Loading..."
+      default: "Загрузка"
     },
 
     /**
@@ -426,7 +426,7 @@ export default {
      */
     noChildrenText: {
       type: String,
-      default: "No sub-options."
+      default: "Нет доступных опций"
     },
 
     /**
@@ -434,7 +434,7 @@ export default {
      */
     noOptionsText: {
       type: String,
-      default: "No options available."
+      default: "Нет доступных опций"
     },
 
     /**
@@ -442,7 +442,7 @@ export default {
      */
     noResultsText: {
       type: String,
-      default: "No results found..."
+      default: "Ничего не найдено"
     },
 
     /**
@@ -504,7 +504,7 @@ export default {
      */
     placeholder: {
       type: String,
-      default: "Select..."
+      default: "Выберите"
     },
 
     /**
@@ -520,7 +520,7 @@ export default {
      */
     retryText: {
       type: String,
-      default: "Retry?"
+      default: "Перезагрузить?"
     },
 
     /**
@@ -528,7 +528,7 @@ export default {
      */
     retryTitle: {
       type: String,
-      default: "Click to retry"
+      default: "Нажмите чтобы перезагрузить"
     },
 
     /**
@@ -552,7 +552,7 @@ export default {
      */
     searchPromptText: {
       type: String,
-      default: "Type to search..."
+      default: "Введите для поиска"
     },
 
     /**

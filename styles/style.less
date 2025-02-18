@@ -9,7 +9,7 @@
  * Variables
  */
 
-@treeselect-font-size: 1em;
+@treeselect-font-size: 14px;
 @treeselect-font-size-sm: 12px;
 @treeselect-padding: 5px;
 @treeselect-border-radius-lg: 5px;
@@ -101,11 +101,11 @@
 @treeselect-checkbox-checked-border-color-hover: @treeselect-checkbox-color-highlight;
 @treeselect-checkbox-checked-bg-hover: @treeselect-checkbox-color-highlight;
 @treeselect-checkbox-disabled-border-color: @treeselect-checkbox-border-color;
-@treeselect-checkbox-disabled-bg-color: darken(@treeselect-checkbox-bg, 3%);
+@treeselect-checkbox-disabled-bg-color: darken(@treeselect-checkbox-bg, 0%);
 @treeselect-checkbox-disabled-indeterminate-icon: "./assets/checkbox-indeterminate-disabled.png";
 @treeselect-checkbox-disabled-checked-icon: "./assets/checkbox-checked-disabled.png";
 @treeselect-option-label-color: inherit;
-@treeselect-option-label-color-disabled: rgba(0, 0, 0, 0.25);
+@treeselect-option-label-color-disabled: @md-grey-500;
 
 @treeselect-loader-color-dark: @md-light-blue-600;
 @treeselect-loader-color-light: @md-light-blue-100;
@@ -302,23 +302,35 @@
   &-enter-active,
   &-leave-active {
     // to be overriden
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform-origin: top;
   }
 
   &-enter,
   &-leave-to {
     // to be overriden
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+  &-enter-to,
+  &-leave {
+    opacity: 1;
+    transform: scaleY(1);
   }
 }
 
 .vue3-treeselect__list--transition {
   &-enter-active,
   &-leave-active {
-    // to be overriden
   }
 
   &-enter,
   &-leave-to {
-    // to be overriden
+  }
+
+  &-enter-to,
+  &-leave {
   }
 }
 
@@ -516,6 +528,7 @@
 
   &.vue3-treeselect__multi-value-item-new {
     background: @treeselect-multi-value-item-bg-new;
+
     &:hover {
       background: @treeselect-multi-value-item-bg-new;
     }
@@ -792,6 +805,7 @@
     }
   }
 }
+
 .generate-level-indentations(@treeselect-max-level);
 
 .vue3-treeselect__option {
