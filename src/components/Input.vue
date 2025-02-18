@@ -150,8 +150,7 @@ export default {
           }
           const current = instance.getNode(instance.menu.current);
           if (
-            (current.isBranch && instance.disableBranchNodes) ||
-            !current.isMatched
+            (current.isBranch && instance.disableBranchNodes)
           ) {
             return;
           }
